@@ -1,7 +1,7 @@
 interface Props {}
 
 const Button = (props: Props) => {
-  return <div>MyButton</div>;
+  return <div className="bg-red-200">MyButton</div>;
 };
 
 export default Button;

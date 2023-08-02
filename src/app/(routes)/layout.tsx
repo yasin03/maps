@@ -1,7 +1,7 @@
 import classNames from "classnames";
-import "./globals.css";
-import { Inter, Poppins } from "next/font/google";
 import { Metadata } from "next";
+import { Poppins } from "next/font/google";
+import "../common/assets/styles/globals.css";
 
 const inter = Poppins({
   weight: ["300", "400", "500", "600", "700"],
