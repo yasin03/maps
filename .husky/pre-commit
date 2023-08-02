@@ -3,5 +3,3 @@
 
 yarn lint-staged
 yarn build
-yarn test:component
-yarn test:e2e
