@@ -1,4 +1,4 @@
-import { IconProps } from "../../components/Icon";
+import { IconProps } from "@/common/components/Icon";
 
 const OneTwoThree = (props: IconProps) => {
   return (

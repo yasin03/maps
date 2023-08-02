@@ -1,10 +1,10 @@
-import OneTwoThree from "@/icons/123";
+import OneTwoThree from "@/app/common/assets/icons/OneTwoThree";
 import { SVGProps } from "react";
 
 export interface IconProps extends SVGProps<SVGSVGElement> {}
 
 const Icon = {
-  123: OneTwoThree,
+  OneTwoThree: OneTwoThree,
 };
 
 export default Icon;
