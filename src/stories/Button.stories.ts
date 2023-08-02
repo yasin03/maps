@@ -16,4 +16,8 @@ const meta = {
 export default meta;
 type Story = StoryObj<typeof meta>;
 
+// Your button variant
 export const Text: Story = {};
+
+//Another Button variant
+export const Primary: Story = {};
