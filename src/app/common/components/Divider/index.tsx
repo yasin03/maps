@@ -1,13 +1,20 @@
 interface Props {
-  variant?: "horizontal" | "vertical"; // Varyant olarak "horizontal" (yatay) veya "vertical" (dikey) seçeneklerini ekliyoruz
+  variant?: "horizontal" | "vertical";
+  size?: "normal" | "thick";
 }
 
-const Divider = ({ variant = "vertical" }: Props) => {
+const Divider = ({ variant = "vertical", size = "normal" }: Props) => {
   return (
     <div
       className={`flex ${
-        variant === "vertical" ? "h-px" : "w-px h-full"
-      } bg-black/[0.12]`}
+        variant === "vertical"
+          ? size === "thick"
+            ? "h-0.5 w-full"
+            : "h-px w-full"
+          : size === "thick"
+          ? "w-0.5 h-full"
+          : "w-px h-full"
+      } bg-[#E6E8EC]`}
     ></div>
   );
 };
